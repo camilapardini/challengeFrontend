@@ -1,0 +1,266 @@
+/* ------ Fonts ------- */
+@font-face {
+  font-family: "klavikaLight";
+  src: url("../fonts/klavika-light-webfont.woff"); }
+
+@font-face {
+  font-family: "klavikaRegular";
+  src: url("../fonts/klavika-regular-webfont.woff"); }
+
+@font-face {
+  font-family: "klavikaMedium";
+  src: url("../fonts/klavika-medium-webfont.woff"); }
+
+@font-face {
+  font-family: "klavikaBold";
+  src: url("../fonts/klavika-bold-webfont.woff"); }
+
+/* ------ Body ------- */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  width: 12226px; }
+
+/* ------ Loader ------- */
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 100vw;
+  text-align: center;
+  /*--- Animation ---*/ }
+  #loader .imgBox {
+    height: auto;
+    transform-origin: 50% 50%;
+    transform: translatey(0px);
+    animation: float 1s ease-in-out infinite; }
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px); }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-30px); }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px); } }
+  #loader img {
+    animation: fadeIn 3s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  #loader .textLoader {
+    display: flex;
+    justify-content: center; }
+    #loader .textLoader #typeWriter {
+      margin-top: 20%;
+      color: #bfb7b7;
+      font-family: "klavikaLight";
+      font-style: italic;
+      text-shadow: 0px 1px 2px rgba(23, 1, 5, 0.235);
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative; }
+  #loader #typeWriter {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; }
+
+@keyframes fadeInAnimation {
+  0% {
+    font-size: 0rem; }
+  100% {
+    font-size: 1.2rem; } }
+
+/* ------ Content ------- */
+#content {
+  display: none;
+  animation: fadeIn 3s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.background {
+  background-image: url("../img/background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex; }
+
+#arrows {
+  height: 128px;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  z-index: 20; }
+  #arrows .fa-angle-left {
+    color: white;
+    margin-left: 2rem;
+    cursor: pointer; }
+  #arrows .fa-angle-right {
+    cursor: pointer;
+    color: white;
+    margin-right: 2rem; }
+
+.rightArrow {
+  display: block; }
+
+.hidden {
+  opacity: 0;
+  pointer-events: none; }
+
+/* ------ Sections ------- */
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0;
+  color: white;
+  position: absolute; }
+  section h2 {
+    text-decoration: 1px underline;
+    font-size: 3.4rem;
+    font-family: "klavikaLight";
+    font-weight: 400;
+    padding: 0px 100px 0px 80px;
+    z-index: 10; }
+  section p {
+    font-family: "klavikaLight";
+    font-size: 0.8rem;
+    margin-left: 2rem; }
+
+#step-0 {
+  left: 0;
+  height: 85vh;
+  transition: opacity 2s; }
+
+#step-1 {
+  left: 900px;
+  justify-content: center;
+  transition: opacity 2s; }
+  #step-1 p {
+    margin-top: 26rem;
+    margin-left: 16rem; }
+
+#step-2 {
+  left: 1500px;
+  justify-content: center;
+  transition: opacity .9s; }
+
+#step-3 {
+  left: 2800px;
+  justify-content: center;
+  align-items: flex-end;
+  transition: opacity .9s; }
+
+#step-4 {
+  left: 3800px;
+  justify-content: center;
+  align-items: flex-end;
+  transition: opacity .9s; }
+
+#step-5 {
+  left: 5000px;
+  justify-content: center;
+  align-items: flex-end;
+  transition: opacity .9s; }
+
+#step-6 {
+  left: 6200px;
+  justify-content: center;
+  align-items: flex-start;
+  transition: opacity .9s; }
+
+#step-7 {
+  left: 7800px;
+  justify-content: center;
+  transition: opacity .9s; }
+
+#step-8 {
+  left: 7800px;
+  justify-content: center;
+  transition: opacity .9s; }
+
+#step-9 {
+  left: 9200px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: right;
+  transition: opacity .9s; }
+  #step-9 h2 {
+    padding-right: 1rem; }
+  #step-9 p {
+    margin-top: 9rem;
+    padding-right: 2rem; }
+  #step-9 a {
+    color: white; }
+
+.socialMedia {
+  display: inline-block;
+  margin-top: 2rem; }
+  .socialMedia span {
+    font-family: "klavikaLight";
+    padding: 15px;
+    font-size: 0.8rem; }
+
+/* ------ Footer ------- */
+footer {
+  position: fixed;
+  height: 20vh;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer .countSlider {
+    width: auto;
+    margin: 0 2% 0 2%;
+    border: 2px white dotted;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    z-index: 20; }
+    footer .countSlider .box {
+      padding: 0.4rem;
+      color: white;
+      padding-top: 0;
+      padding-bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90%;
+      border-left: 2px white dotted;
+      cursor: pointer; }
+      footer .countSlider .box:hover {
+        background-color: white; }
+      footer .countSlider .box p {
+        font-size: 13px;
+        font-family: "klavikaLight";
+        cursor: pointer; }
+  footer .logo {
+    width: 5%;
+    height: auto;
+    margin: 0 2% 0 2%; }
+    footer .logo img {
+      width: 100%;
+      filter: invert(100%); }

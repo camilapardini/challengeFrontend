@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, step-0-scale=1.0">
+  <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/ico" href="img/favicon.ico">
+  <title>How to be a Monk</title>
+</head>
+
+<body>
+  <div id="loader">
+    <div class="imgLoader">
+      <div>
+        <div class="imgSmoke">
+          <div class="imgBox">
+            <img src="img/monk.png" alt="Padawan image">
+          </div>
+        </div>
+      </div>
+      <div class="textLoader">
+        <p id="typeWriter">Patience!, young padawan...</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="content">
+    <div class="background">
+      <div id="arrows">
+        <div class="leftArrow hidden" onclick="previous()">
+          <i class="fa fa-angle-left" style="font-size:90px"></i>
+        </div>
+        <div class="rightArrow" onclick="next()">
+          <i class="fa fa-angle-right" style="font-size:90px"></i>
+        </div>
+      </div>
+
+      <section id="step-0">
+        <h2>WE ARE BREAKING <br>OUR VOW <br> OF SILENCE</h2>
+        <p>In January 2011, after a decade of digital, we opened the doors to our temple.<br>Follow our notable
+          eightfold path to digital enlightenment here.</p>
+      </section>
+      <section id="step-1" class="hidden">
+        <h2>TALENT IS GIVEN<br>TRUE SKILL IS<br>EARNED</h2>
+      </section>
+      <section id="step-2" class="hidden">
+        <h2>BE FLEXIBLE TO<br>CHANGE AND<br>STURDY IN<br> CONVICTION</h2>
+      </section>
+      <section id="step-3" class="hidden">
+        <h2>USE MANY SKILLS<br>YET WORKS AS ONE</h2>
+      </section>
+      <section id="step-4" class="hidden">
+        <h2>TO MASTER<br>ANYTHING FIND<br> INTEREST IN<br> EVERYTHING</h2>
+      </section>
+      <section id="step-5" class="hidden">
+        <h2>INDIVIDUALS<br>FLOURISH<br>IF CULTURE<br> AND WISDOM<br> ARE SHARED</h2>
+      </section>
+      <section id="step-6" class="hidden">
+        <h2>TRAIN FOR<br>PERFECTION BUT<br>AIM FOR MORE</h2>
+      </section>
+      <section id="step-7" class="hidden">
+        <h2>TAKE PRIDE IN YOUR<br>WORK BUT DO NOT<br>SEEK PRAISE</h2>
+      </section>
+      <section id="step-8" class="hidden">
+        <h2>TEMPORARY<br>SACRIFICE BRINGS<br>LASTING RESULTS</h2>
+      </section>
+      <section id="step-9" class="hidden">
+        <h2>BECOME A MONK</h2>
+        <p>Interested in joining our monastery? <br>Check out our current openings on <a
+            href="https://media.monks.com/careers" target="blank_">mediamonks.com/careers.</a></p>
+        <div class="socialMedia">
+          <i class="fas fa-envelope"> <span>Mail ons</span></i>
+          <i class="fa fa-facebook"><span>Facebook</span></i>
+          <i class="fa fa-twitter"><span>Twitter</span></i>
+        </div>
+      </section>
+
+      <footer>
+        <div class="countSlider">
+          <div class="box" onclick="toStep(0)"></div>
+          <div class="box" onclick="toStep(1)">
+            <p>1</p>
+          </div>
+          <div class="box" onclick="toStep(2)">
+            <p>2</p>
+          </div>
+          <div class="box" onclick="toStep(3)">
+            <p>3</p>
+          </div>
+          <div class="box" onclick="toStep(4)">
+            <p>4</p>
+          </div>
+          <div class="box" onclick="toStep(5)">
+            <p>5</p>
+          </div>
+          <div class="box" onclick="toStep(6)">
+            <p>6</p>
+          </div>
+          <div class="box" onclick="toStep(7)">
+            <p>7</p>
+          </div>
+          <div class="box" onclick="toStep(8)">
+            <p>8</p>
+          </div>
+          <div class="box" onclick="toStep(9)"> </div>
+        </div>
+        <div class="logo">
+          <img src="./img/logo.svg" alt="">
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
